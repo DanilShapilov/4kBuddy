@@ -14,7 +14,7 @@
       <sub>(if not correct, make sure page is not zummed in/out, try to press <b>CTRL + 0</b>)</sub>
     </p>
     <FullscreenToggle />
-    <input id="" type="range" min="0" :max="downscaleRes.length - 1" v-model="selectedRes" />
+    <input type="range" min="0" :max="downscaleRes.length - 1" v-model="selectedRes" />
     <div class="estimated-performance" v-if="downscaleRes.length > 0">
       <label>
         Initial fps
@@ -27,6 +27,11 @@
       <span class="estimated-performance__percentage"
         >Percentage gain <b>{{ downscaleRes[selectedRes].lessBy }}%</b></span
       >
+    </div>
+    <div class="links">
+      <a class="icon" href="https://github.com/DanilShapilov/4kBuddy" target="_blank"
+        ><img src="/github-mark-white.svg" alt="" srcset=""
+      /></a>
     </div>
   </header>
 
@@ -186,6 +191,13 @@ header {
 }
 input[type='range'] {
   width: 30rem;
+  cursor: pointer;
+}
+
+.icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
 }
 
 .estimated-performance {
