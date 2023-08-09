@@ -14,20 +14,22 @@
       <sub>(if not correct, make sure page is not zummed in/out, try to press <b>CTRL + 0</b>)</sub>
     </p>
     <FullscreenToggle />
-    <input type="range" min="0" :max="downscaleRes.length - 1" v-model="selectedRes" />
-    <div class="estimated-performance" v-if="downscaleRes.length > 0">
-      <label>
-        Initial fps
-        <input class="estimated-performance__initial" type="number" min="10" v-model="initial" />
-      </label>
-      <label>
-        Estimated fps
-        <input class="estimated-performance__estimate" type="number" :value="estimate" readonly />
-      </label>
-      <span class="estimated-performance__percentage"
-        >Percentage gain <b>{{ downscaleRes[selectedRes].lessBy }}%</b></span
-      >
-    </div>
+    <form action="" @submit.prevent="">
+      <input type="range" min="0" :max="downscaleRes.length - 1" v-model="selectedRes" />
+      <div class="estimated-performance" v-if="downscaleRes.length > 0">
+        <label>
+          Initial fps
+          <input class="estimated-performance__initial" type="number" min="10" v-model="initial" />
+        </label>
+        <label>
+          Estimated fps
+          <input class="estimated-performance__estimate" type="number" :value="estimate" readonly />
+        </label>
+        <span class="estimated-performance__percentage"
+          >Percentage gain <b>{{ downscaleRes[selectedRes].lessBy }}%</b></span
+        >
+      </div>
+    </form>
     <div class="links">
       <a class="icon" href="https://github.com/DanilShapilov/4kBuddy" target="_blank"
         ><img src="/github-mark-white.svg" alt="" srcset=""
