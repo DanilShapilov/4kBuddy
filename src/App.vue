@@ -30,6 +30,14 @@
         >
       </div>
     </form>
+    <iframe
+      style="width: 100%; aspect-ratio: 16/9"
+      src="https://www.youtube.com/embed/V5ii3ld2J4c"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
     <div class="links">
       <a class="icon" href="https://github.com/DanilShapilov/4kBuddy" target="_blank"
         ><img src="/github-mark-white.svg" alt="" srcset=""
