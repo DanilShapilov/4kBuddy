@@ -2,8 +2,6 @@
 
 Helps You choose custom resolution by visualizing it on your screen and estimating performance gains.
 
-## Check it out here: [4kbuddy.shapilov.dev](https://4kbuddy.shapilov.dev/)
-
 ![pic](https://github.com/DanilShapilov/4kBuddy/assets/39529221/d457644e-03a1-41e2-9e55-c005999b32b6)
 
 ## Recommended IDE Setup
